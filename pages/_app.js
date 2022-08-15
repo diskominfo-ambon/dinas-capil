@@ -9,7 +9,7 @@ axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_URL;
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --primary: royalblue;
+    --primary: orange;
     --second: #0664A6;
     --dark: #3C3C3C;
     --light: #7C7C7C;

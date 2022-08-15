@@ -90,7 +90,7 @@ export default function Footer() {
         <FlexRow>
           <FooterBrand>
             <List>
-              <ListItem><BrandImage width="35" height="35" src="/static/img/kominfo.png" alt="kominfo" layout="fixed"/></ListItem>
+              <ListItem><BrandImage width="35" height="35" src="/static/img/logo-dinas.png" alt="kominfo" layout="fixed"/></ListItem>
               <ListItem><Paragraph>Jl. Sultan Hairun No. 1 Gd. C Lt. 4 kantor Balai kota Ambon</Paragraph></ListItem>
             </List>
           </FooterBrand>

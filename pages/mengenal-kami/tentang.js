@@ -29,26 +29,22 @@ export default function About() {
 
   return (
     <Layout breadcrumb="Tentang">
-      <Heading>Visi</Heading>
-      <Paragraph>Ambon yang hamonis, sejatera dan religius</Paragraph>
-
-      <Heading>Misi</Heading>
-      <List>
-        <ListItem>Memperkuat dan mempererat harmonisasi sosial</ListItem>
-        <ListItem>Meningkatkan kualitas sumber daya manusia</ListItem>
-        <ListItem>Memberdayakan ekonomi keluarga dan masyarakat menuju kemandirian yang kreatif berbasis sumber daya alam yang tersedia</ListItem>
-        <ListItem>Meningkatkan nilai-nilai sprititualitas masyarakat</ListItem>
-      </List>
+      <Heading>Visi dan Misi</Heading>
+      <Image src="https://ambon.go.id/wp-content/uploads/2022/07/VISI-MISI.jpg"/>
+     
       <Heading>Motto</Heading>
-      <Paragraph>Aktual dan terpercaya dalam pelayanan informasi</Paragraph>
+      <Image src="https://ambon.go.id/wp-content/uploads/2021/06/moto-1.png"/>
+
+      <Heading>Makmulat Pelayanan</Heading>
+      <Image src="https://ambon.go.id/wp-content/uploads/2022/08/WhatsApp-Image-2022-08-01-at-01.06.46.jpeg"/>
+
       <Heading>11 Kebijakan Prioritas</Heading>
       <Image src="https://ambon.go.id/wp-content/uploads/2022/07/11-Kebijakan-Prioritas.jpeg"/>
 
       <Heading>Struktur Organisasi</Heading>
-      <Image src="https://ambon.go.id/wp-content/uploads/2022/04/3.-Kominfo.png"/>
+      <Image src="https://ambon.go.id/wp-content/uploads/2022/04/3.-Capil.png"/>
 
-      <Heading>Penilaian</Heading>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSpBq_62r6jQ5LXABfC1ymPBW6Ex3s_v7A82KsHcqxCxU3vvwAqYRc_8yMXc84Znyhy2N9nzjwPxMPy/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+     
     </Layout>
   );
 }

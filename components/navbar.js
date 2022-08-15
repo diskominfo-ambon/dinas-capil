@@ -92,7 +92,7 @@ const NavbarItem = styled.li`
     ${
       props => props.active && `
         color: white;
-        background-color: dodgerblue;
+        background-color: gray;
         // &::before {
         //   content: '';
         //   display: block;
@@ -131,7 +131,7 @@ export default function Navbar() {
     <Header>
       <ContainerFlexRow>
         <Content>
-          <NavbarBrand src="/static/img/kominfo.png" height={40} width={40} alt="logo kominfo"/>
+          <NavbarBrand src="/static/img/logo-dinas.png" height={40} width={40} alt="logo kominfo"/>
           <NavbarCollapse>
             <NavbarItem active={router.pathname === '/'}>
               <Link href="/" passHref>
@@ -145,27 +145,13 @@ export default function Navbar() {
                 text="Mengenal kami"
                 menus={[
                   { to: '/mengenal-kami/tentang', text: 'Tentang'},
-                  { to: '/mengenal-kami/tugas', text: 'Tugas dan fungsi'},
+                  // { to: '/mengenal-kami/tugas', text: 'Tugas dan fungsi'},
                  
                 ]}
               />
             </NavbarItem>
-            <NavbarItem
-              active={/perencanaan/.test(router.pathname)}
-            >
-              <LinkDropdown
-                text="Perencanaan"
-                menus={[
-                  { to: '/static/RENSTRA-2017-2023.pdf', text: 'Rencana Strategis'},
-                  { to: '/perencanaan/rencana-kerja', text: 'Rencana Kerja'},
-                  { to: '/static/LAKIP DISKOMINFO 2021.pdf', text: 'Laporan Kinerja Akuntabilitas Pemerintah'},
-                  { to: '/static/', text: 'Laporan Pertanggungjawaban Pemerintah Daerah'},
-                  // { to: '/perencanaan/lakip', text: 'LAKIP'},
-                  { to: '/perencanaan/lkpj', text: 'LKPJ'},
-                ]}
-              />
-            </NavbarItem>
-            <NavbarItem  active={router.pathname === '/pengumuman'}>
+
+            {/* <NavbarItem  active={router.pathname === '/pengumuman'}>
               <Link href="/pengumuman" passHref>Pengumuman</Link>
             </NavbarItem>
             <NavbarItem active={/informasi/.test(router.pathname)}>
@@ -176,18 +162,16 @@ export default function Navbar() {
                   { to: '/informasi/agenda', text: 'Informasi agenda' }
                 ]}
               />
-            </NavbarItem>
+            </NavbarItem> */}
             <NavbarItem>
               <LinkDropdown
                 text="Layanan"
                 menus={[
-                  { blank: true, to: 'http://www.lapor.go.id', text: 'E-Lapor - Layanan lapor pengaduan masyarakat'},
-                  { blank: true, to: 'https://ambonaccess.id', text: 'Ambon Access'},
-                  { blank: true, to: '/static/img/SOP-PENGADUAN-melalui-LaporSPAN-dan-MEdia-Lain-KOTA-AMBON (2)_page-0001.jpg', text: 'SOP Pengaduan Melalui LAPOR-SPAN dan Media Lain'},
-                  { blank: true, to: 'https://ambon.go.id/wp-content/uploads/2020/12/SOP-PENGADUAN-SMS.jpg', text: 'SOP SMS BROADCAST'},
-                  { blank: true, to: '/static/img/SOP-PENGADUAN-LAYANAN-INTERNET-DAN-APLIKASI.jpg', text: 'SOP LAYANAN INTERNET DAN APLIKASI'},
-                  { blank: true, to: '#', text: 'SIMAK - Sistem Informasi Manajemen Administrasi Kependudukan'},
-                  { to: '/mengenal-kami/command-center', text: 'Layanan Command Center'},
+                  { blank: true, to: 'https://ambon.go.id/wp-content/uploads/2021/02/Standar-Palayana-DisdukCapil.pdf', text: 'Standar Pelayanan DisdukCapil'},
+                  { blank: true, to: 'https://ambon.go.id/wp-content/uploads/2021/06/banner-pengaduan.pdf', text: 'Standar pengaduan'},
+  
+                  { blank: true, to: 'https://ambon.go.id/wp-content/uploads/2022/08/Lampiran-STANDAR-PELAYANAN-2022.pdf', text: 'Lampiran STANDAR PELAYANAN 2022'},
+
                 ]}
               />
             </NavbarItem>

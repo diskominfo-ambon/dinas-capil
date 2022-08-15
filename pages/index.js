@@ -104,7 +104,7 @@ const BlockqouteItem = styled.div`
 `;
 
 const HeadlineWelcome = styled.div`
-  background-color: royalblue;
+  background-color: orange;
   min-height: 400px;
   display: flex;
   flex-direction: column;
@@ -158,7 +158,7 @@ const HeadlineLink = styled.a`
 
 
 const BlockTagHealdine = styled.span`
-  background-color: dodgerblue;
+  background-color: gray;
   border-radius: 3px;
   padding: .3rem;
   margin-right: .3rem;
@@ -388,8 +388,8 @@ export default function Home(props) {
         </Container>
         <FlexCenter>
           <Container>
-              <Headline>WEBSITE RESMI DINAS KOMINFOSANDI KOTA AMBON</Headline>
-              <SubHeadline><BlockTagHealdine>#kenaldulu</BlockTagHealdine> bersama Dinas Komunikasi, Informatika dan Persandian kota Ambon wujudkan Teknologi untuk semua.</SubHeadline>
+              <Headline>WEBSITE RESMI DINAS KEPENDUDUKAN DAN CATATAN SIPIL</Headline>
+              <SubHeadline><BlockTagHealdine>#kenaldulu</BlockTagHealdine> bersama Dinas Kependudukan dan Catatan Sipil kota Ambon wujudkan Teknologi untuk semua.</SubHeadline>
               <center>
                 <HeadlineLink passHref href="/mengenal-kami/tentang">
                   Mulai kenalan dulu
@@ -420,7 +420,7 @@ export default function Home(props) {
             Drs. BODEWIN M. WATTIMENA, M.Si - PEJABAT WALIKOTA AMBON
           </Blockqoute.Caption>
         </BlockqouteItem>
-        <BlockqouteItem className="blockqoute__policies">
+        {/* <BlockqouteItem className="blockqoute__policies">
           <Blockqoute.Heading>
             Makmulat Pelayanan
           </Blockqoute.Heading>
@@ -432,7 +432,7 @@ export default function Home(props) {
           <Blockqoute.Caption>
             Drs. J. R. ADRIAANSZ, M.Si - KEPALA DINAS KOMUNIKASI INFORMATIKA & PERSANDIAN KOTA AMBON
           </Blockqoute.Caption>
-        </BlockqouteItem>
+        </BlockqouteItem> */}
       </Blockqoute>
 
 
@@ -453,7 +453,7 @@ export default function Home(props) {
 
 
       {/* Kegiatan & Pengumuman terbaru */}
-      <Section>
+      {/* <Section>
         <Container>
           <SectionHeading>Temukan informasi terbaru kami</SectionHeading>
           <SectionSubHeading>Informasi terbaru dari Dinas komunikasi, informatika dan persandian kota Ambon</SectionSubHeading>
@@ -490,7 +490,7 @@ export default function Home(props) {
             </SectionContent>
           </SectionFlex>
         </Container>
-      </Section>
+      </Section> */}
 
 
       <Footer>
